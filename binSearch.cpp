@@ -1,9 +1,8 @@
 #include <iostream>
 #include <cstdio>
 
-using namespace std;
-
 int binSearch(int* S, int e, int lo, int hi){
+    // 返回不大于e的最大pos
     while (lo < hi){    // 切记while终止条件
         int mi = (lo + hi) >> 1;
         (e < S[mi]) ? hi = mi : lo = mi + 1;
