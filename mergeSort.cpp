@@ -42,5 +42,6 @@ int main()
     mergeSort(S, 0, 7);
     printf("after: ");
     printList(S, 7);
+    printf("inversion pair amount is: %d\n", inversion_cnt);
     return 0;
 }
